@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldenHarvest - Products by Category (Almonds, Cashews, Dates, Mixes)</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Tailwind CSS 3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#fdf8f3',
+              dark: '#181009',
+              primary: '#b45309',
+              primaryHover: '#92400e',
+              secondary: '#4d7c0f',
+              secondaryHover: '#3f6212',
+              accent: '#d97706',
+              navy: '#2c1a0e',
+            },
+            slate: {
+              50: '#fbf8f4',
+              100: '#f5ede2',
+              200: '#e8d7c3',
+              300: '#d7bc9e',
+              400: '#b89776',
+              500: '#967353',
+              600: '#78583c',
+              700: '#5c412a',
+              800: '#402c1b',
+              850: '#2e1f12',
+              900: '#22160c',
+              950: '#140c06',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Golden<span class="text-brand-primary">Harvest</span>
+          </span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Home</a>
+          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Home 2</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Our Story</a>
+          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-amber-400">Products</a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Gift Boxes</a>
+          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Bulk Orders</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Desktop Utility Buttons -->
+        <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
+          
+          <!-- RTL Toggle -->
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+          </button>
+          
+          <!-- Theme Toggle -->
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
+            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
+          </button>
+
+          <a href="enquire.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold hover:shadow-lg hover:shadow-amber-700/25 transition-all transform hover:-translate-y-0.5">Enquire Now</a>
+        </div>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Down Menu -->
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Our Story</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-amber-50/50 dark:bg-amber-950/20">Products</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gift Boxes</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Bulk Orders</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
+        <!-- Mobile RTL Toggle -->
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+          <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+        </button>
+        <!-- Mobile Theme Toggle -->
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
+          <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
+          <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
+          <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-2.5">
+        <a href="enquire.html" class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold shadow-md shadow-amber-700/20">Enquire Now</a>
+      </div>
+      <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-grow pt-20">
+    
+    <!-- 1. Hero Section -->
+    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950 page-hero">
+      <!-- Full Cover Background Image -->
+      <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=1600" 
+           alt="Premium Nuts, Dates and Mixes by Category" 
+           class="absolute inset-0 w-full h-full object-cover opacity-60">
+      <!-- Gradient/Overlay to ensure readability -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/55 to-slate-900/25 z-0"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
+        <span class="text-amber-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Shop By Category</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+          Our Products: Almonds, Cashews, Dates &amp; Mixes
+        </h1>
+        <p class="text-slate-200 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+          Explore our hand-graded dry fruit categories featuring California &amp; Mamra almonds, jumbo W180 cashews, royal Arabian dates, and superfood trail mixes.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Products by Category Section (Almonds, Cashews, Dates, Mixes) -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Category 1: Almonds -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=600" 
+                 alt="California &amp; Mamra Almonds" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Almonds Collection</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Crunchy California Nonpareil, high-oil Kashmiri Mamra, Iranian Gurbandi, and smoked or Himalayan salted roasted almonds.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-primary dark:text-amber-400 font-bold uppercase tracking-wider">Rich in Vitamin E &amp; Protein</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Cashews -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1563292769-4e05b684851a?auto=format&fit=crop&q=80&w=600" 
+                 alt="Jumbo Whole Cashews" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Cashews Collection</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Buttery ivory-white W180 and W240 king-size whole cashews—available raw, dry-roasted salted, cracked black pepper, and peri-peri.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-primary dark:text-amber-400 font-bold uppercase tracking-wider">King-Size W180 Grade</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Dates -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=600" 
+                 alt="Royal Medjool &amp; Ajwa Dates" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Dates Collection</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Succulent Palestinian Medjool, sacred Madinah Ajwa, soft Iranian Kimia, Kalmi, and gourmet nut-stuffed dates with zero added sugar.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-primary dark:text-amber-400 font-bold uppercase tracking-wider">100% Natural Energy</div>
+            </div>
+          </div>
+
+          <!-- Category 4: Mixes -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1536591375315-196000ea3678?auto=format&fit=crop&q=80&w=600" 
+                 alt="Artisan Trail &amp; Berry Mixes" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Mixes Collection</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Nutrient-dense trail mixes blending roasted almonds, cashews, pistachios, walnuts, dried cranberries, figs, and pumpkin seeds.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-primary dark:text-amber-400 font-bold uppercase tracking-wider">Daily Superfood Blends</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Ordering Process Section -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">How to Order</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            Customize Your Wholesome Pantry Pack
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            Select your preferred nut grades, roasting styles, and airtight packaging for home delivery or store pickup.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/30 text-brand-primary text-xs font-bold font-outfit">STEP 1</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Choose Category &amp; Grade</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Pick from our core categories: Almonds (Mamra or Nonpareil), Cashews (W180 or W240), Dates (Medjool, Ajwa, or Kimia), or Artisan Trail Mixes.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-lime-50 dark:bg-lime-950/30 text-brand-secondary text-xs font-bold font-outfit">STEP 2</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Select Roast &amp; Seasoning</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Enjoy your kernels 100% raw and unroasted, lightly dry-roasted with Himalayan pink salt, or infused with saffron, black pepper, or herbs.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/30 text-amber-600 text-xs font-bold font-outfit">STEP 3</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Pick Weight &amp; Packaging</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Available in 250g, 500g, and 1kg resealable kraft pouches, reusable airtight glass pantry jars, or velvet festive gift hampers.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Pricing / Packages Section -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm">Value Assortments</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            Curated Nut &amp; Dry Fruit Pack Pricing
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            Stock your pantry or share wholesome health with our multi-category value bundles, freshly vacuum-packed to order.
+          </p>
+        </div>
+
+        <!-- Plans Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Plan 1 -->
+          <div class="flex flex-col h-full bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-lg relative">
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Daily Wellness Quad Pack</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">All 4 core categories — ideal starter bundle</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$29</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ 1 kg total (4 x 250g)</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>250g California Nonpareil Almonds</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>250g Whole W240 Ivory Cashews</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>250g Soft Arabian Kimia Dates</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>250g Daily Superfood Trail Mix</span></li>
+            </ul>
+
+            <a href="enquire.html?pack=wellness-quad" class="w-full text-center py-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              Enquire Quad Pack
+            </a>
+          </div>
+
+          <!-- Plan 2 -->
+          <div class="flex flex-col h-full bg-white dark:bg-slate-900 p-8 rounded-3xl border-2 border-brand-primary shadow-xl relative">
+            <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-brand-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Most Popular
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Family Wholesome Pantry Box</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">Our bestseller in airtight glass jars</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$58</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ 2.5 kg total (5 x 500g)</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>500g Kashmiri Mamra Almonds</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>500g Jumbo W180 Roasted Cashews</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>500g Jumbo Palestinian Medjool Dates</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>500g Roasted Iranian Pistachios</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>500g Antioxidant Berry &amp; Seed Mix</span></li>
+            </ul>
+
+            <a href="enquire.html?pack=family-pantry" class="w-full text-center py-3.5 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white text-sm font-semibold shadow-md shadow-amber-700/20 transition-colors">
+              Enquire Family Box
+            </a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="last-card-md flex flex-col h-full bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-lg relative">
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Royal Connoisseur Crate</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">Complete luxury reserve assortment</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$115</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ 5 kg reserve crate</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Everything in Family Pantry Box (Doubled)</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Includes Snow-White Kashmiri Walnuts &amp; Figs</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Complimentary 2g Kashmiri Saffron Vial</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Packed in 8 reusable glass mason jars</span></li>
+            </ul>
+
+            <a href="enquire.html?pack=royal-crate" class="w-full text-center py-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              Enquire Reserve Crate
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Custom bulk & gifting note -->
+        <div class="mt-12 p-6 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 flex flex-col md:flex-row items-center justify-between text-left ltr:text-left rtl:text-right gap-6">
+          <div class="flex items-center space-x-4 rtl:space-x-reverse">
+            <div class="w-12 h-12 rounded-xl bg-lime-50 dark:bg-lime-950/30 text-brand-secondary flex items-center justify-center flex-shrink-0">
+              <i data-lucide="gift" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base">Custom Category Mixes, Gift Hampers &amp; Bulk Inquiries</h4>
+              <p class="text-xs text-slate-400 mt-0.5 font-normal">Looking for specific kernel grades (W180/W210/W320) or custom weight packs for events and wholesale? Enquire now for a tailored quote.</p>
+            </div>
+          </div>
+          <a href="enquire.html" class="px-6 py-3 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold text-sm transition-colors flex-shrink-0">
+            Enquire Now
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="glass-footer py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20">
+              <i data-lucide="leaf" class="w-5 h-5"></i>
+            </div>
+            <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Golden<span class="text-brand-primary">Harvest</span>
+            </span>
+          </a>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
+            Premium single-origin almonds, jumbo cashews, royal Arabian dates, wholesome trail mixes, luxury festive gift boxes, and wholesale bulk orders.
+          </p>
+          
+          <!-- Social Icons -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Facebook">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="X (formerly Twitter)">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categories Links -->
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Categories</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Almonds &amp; Cashews</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Dates &amp; Mixes</a></li>
+            <li><a href="gallery.html" class="hover:text-brand-primary transition-colors">Luxury Gift Boxes</a></li>
+            <li><a href="blog.html" class="hover:text-brand-primary transition-colors">Bulk &amp; Wholesale</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="index.html" class="hover:text-brand-primary transition-colors">Home</a></li>
+            <li><a href="home2.html" class="hover:text-brand-primary transition-colors">Home 2</a></li>
+            <li><a href="about.html" class="hover:text-brand-primary transition-colors">Our Story</a></li>
+            <li><a href="enquire.html" class="hover:text-brand-primary transition-colors">Enquire Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacts and Hours -->
+        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-outfit">Contact &amp; Store Hours</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span>+1 (800) 555-NUTS</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span class="break-all">hello@goldenharvestnuts.com</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+            </li>
+          </ul>
+          
+        </div>
+
+      </div>
+
+      <!-- Copyright row -->
+      <div class="footer-copyright pt-8 border-t flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
+        <p>&copy; 2026 GoldenHarvest Dry Fruits &amp; Nuts Store. All rights reserved.</p>
+        <div class="flex items-center space-x-4 rtl:space-x-reverse mt-4 sm:mt-0">
+          <a href="#" class="hover:text-slate-900 dark:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="main.js"></script>
+</body>
+</html>
