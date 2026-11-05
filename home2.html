@@ -64,11 +64,11 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce">
-            <i data-lucide="leaf" class="w-6 h-6"></i>
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group flex-shrink-0">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce flex-shrink-0">
+            <i data-lucide="leaf" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
-          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <span class="font-outfit text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
             Golden<span class="text-brand-primary">Harvest</span>
           </span>
         </a>
@@ -102,8 +102,8 @@
         </div>
 
         <!-- Mobile Navigation Menu Toggle Button -->
-        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+        <div class="flex items-center space-x-2 sm:space-x-3 lg:hidden rtl:space-x-reverse flex-shrink-0">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex-shrink-0" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -192,44 +192,44 @@
           </div>
 
           <!-- Right Visual Column (Floating Collage) -->
-          <div class="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center">
-            <div class="relative w-full max-w-[400px] h-[400px] md:h-[450px]">
+          <div class="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center overflow-visible">
+            <div class="relative w-full max-w-[310px] xs:max-w-[340px] sm:max-w-[400px] h-[370px] sm:h-[400px] md:h-[450px]">
               
               <!-- Background glowing circle -->
               <div class="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 to-brand-secondary/20 rounded-full blur-3xl -z-10"></div>
               
               <!-- Main Card (Royal Gift Assortment) -->
-              <div class="absolute top-4 left-4 w-72 h-80 rounded-3xl overflow-hidden shadow-2xl border border-white/50 dark:border-slate-800/50 hover:scale-102 transition-transform duration-300 z-20">
+              <div class="absolute top-2 sm:top-4 left-2 sm:left-4 w-60 xs:w-68 sm:w-72 h-68 xs:h-76 sm:h-80 rounded-3xl overflow-hidden shadow-2xl border border-white/50 dark:border-slate-800/50 hover:scale-102 transition-transform duration-300 z-20">
                 <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=600" 
                      alt="Royal Nut &amp; Date Gift Box" 
                      class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                <div class="absolute bottom-5 left-5 text-white">
+                <div class="absolute bottom-4 sm:bottom-5 left-4 sm:left-5 text-white">
                   <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Best Seller</span>
-                  <h3 class="text-lg font-bold font-outfit mt-0.5">Royal Harvest Box</h3>
+                  <h3 class="text-base sm:text-lg font-bold font-outfit mt-0.5">Royal Harvest Box</h3>
                 </div>
               </div>
 
               <!-- Overlapping Card (California Almonds) -->
-              <div class="absolute bottom-4 right-2 w-52 h-60 rounded-3xl overflow-hidden shadow-xl border border-white/50 dark:border-slate-800/50 hover:scale-105 transition-transform duration-300 z-30 transform translate-y-4">
+              <div class="absolute bottom-2 sm:bottom-4 right-1 sm:right-2 w-44 xs:w-48 sm:w-52 h-52 sm:h-60 rounded-3xl overflow-hidden shadow-xl border border-white/50 dark:border-slate-800/50 hover:scale-105 transition-transform duration-300 z-30 transform translate-y-2 sm:translate-y-4">
                 <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=600" 
                      alt="Mamra &amp; California Almonds" 
                      class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent"></div>
-                <div class="absolute bottom-4 left-4 text-white">
+                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                   <span class="text-[10px] font-bold text-amber-300 uppercase tracking-widest">Fresh Crop</span>
-                  <h4 class="text-sm font-bold font-outfit mt-0.5">Jumbo Mamra Almonds</h4>
+                  <h4 class="text-xs sm:text-sm font-bold font-outfit mt-0.5">Jumbo Mamra Almonds</h4>
                 </div>
               </div>
 
               <!-- Micro badge bubble -->
-              <div class="absolute top-28 right-0 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center space-x-2.5 rtl:space-x-reverse z-40 transform translate-x-4 animate-bounce">
-                <div class="w-8 h-8 rounded-full bg-brand-secondary/20 flex items-center justify-center text-brand-secondary font-bold text-sm">
+              <div class="absolute top-24 sm:top-28 right-0 sm:-right-2 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-2.5 sm:p-3.5 rounded-2xl shadow-xl flex items-center space-x-2 sm:space-x-2.5 rtl:space-x-reverse z-40 animate-bounce">
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brand-secondary/20 flex items-center justify-center text-brand-secondary font-bold text-xs sm:text-sm">
                   ★
                 </div>
                 <div>
-                  <h5 class="text-xs font-black text-slate-950 dark:text-white">100% Organic</h5>
-                  <p class="text-[10px] text-slate-400 font-medium">Single-Origin Orchards</p>
+                  <h5 class="text-[11px] sm:text-xs font-black text-slate-950 dark:text-white">100% Organic</h5>
+                  <p class="text-[9px] sm:text-[10px] text-slate-400 font-medium">Single-Origin Orchards</p>
                 </div>
               </div>
 
@@ -285,7 +285,7 @@
                   <div class="w-12 h-12 rounded-xl bg-lime-100 dark:bg-lime-950/50 text-brand-secondary flex items-center justify-center mb-3">
                     <i data-lucide="gift" class="w-6 h-6"></i>
                   </div>
-                  <span class="text-sm font-bold text-slate-900 dark:text-white">Wooden Gift Chest</span>
+                  <span class="text-sm font-bold text-slate-900 dark:text-white">Wooden Chest</span>
                   <span class="text-xs text-slate-400 font-bold mt-1">$8.50</span>
                 </label>
 
@@ -645,10 +645,10 @@
         </div>
 
         <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:auto-rows-fr items-stretch">
           
           <!-- Bronze Tier -->
-          <div class="glass-card p-8 rounded-3xl border-2 border-amber-600/25 bg-amber-50/5 dark:bg-amber-900/5 shadow-xl text-left ltr:text-left rtl:text-right relative overflow-hidden flex flex-col justify-between">
+          <div class="glass-card p-8 rounded-3xl border-2 border-amber-600/25 bg-amber-50/5 dark:bg-amber-900/5 shadow-xl text-left ltr:text-left rtl:text-right relative overflow-hidden flex flex-col justify-between h-full">
             <div class="absolute -top-12 -right-12 w-28 h-28 bg-amber-600/5 rounded-full blur-2xl"></div>
             <div>
               <div class="flex items-center justify-between mb-6">
@@ -675,7 +675,7 @@
           </div>
 
           <!-- Silver Tier (Recommended) -->
-          <div class="glass-card p-8 rounded-3xl border-2 border-brand-primary bg-amber-50/10 dark:bg-amber-900/10 shadow-2xl text-left ltr:text-left rtl:text-right relative flex flex-col justify-between transform -translate-y-2 lg:-translate-y-4">
+          <div class="glass-card p-8 rounded-3xl border-2 border-brand-primary bg-amber-50/10 dark:bg-amber-900/10 shadow-2xl text-left ltr:text-left rtl:text-right relative flex flex-col justify-between h-full transform -translate-y-2 lg:-translate-y-4">
             <div class="absolute -top-12 -right-12 w-28 h-28 bg-brand-primary/10 rounded-full blur-2xl"></div>
             <div class="absolute -top-3.5 right-6 bg-brand-primary text-white text-[9px] font-black tracking-widest px-4 py-1.5 rounded-full uppercase z-10 shadow-md">Popular</div>
             <div>
@@ -704,20 +704,20 @@
           </div>
 
           <!-- Gold Tier -->
-          <div class="glass-card p-8 rounded-3xl border-2 border-brand-secondary/25 bg-lime-50/5 dark:bg-lime-900/5 shadow-xl text-left ltr:text-left rtl:text-right relative overflow-hidden flex flex-col justify-between md:col-span-2 lg:col-span-1">
+          <div class="last-card-md glass-card p-8 rounded-3xl border-2 border-brand-secondary/25 bg-lime-50/5 dark:bg-lime-900/5 shadow-xl text-left ltr:text-left rtl:text-right relative overflow-hidden flex flex-col justify-between md:col-span-2 lg:col-span-1 h-full">
             <div class="absolute -top-12 -right-12 w-28 h-28 bg-brand-secondary/5 rounded-full blur-2xl"></div>
             <div>
               <div class="flex items-center justify-between mb-6">
                 <div>
                   <span class="text-[10px] font-bold text-brand-secondary uppercase tracking-widest">Tier 03</span>
-                  <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white font-outfit">Gold Reserve (VIP)</h3>
+                  <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white font-outfit">Gold Reserve</h3>
                 </div>
                 <div class="w-12 h-12 rounded-xl bg-lime-100 dark:bg-lime-950/40 text-brand-secondary flex items-center justify-center">
                   <i data-lucide="crown" class="w-6 h-6"></i>
                 </div>
               </div>
               <p class="text-xs text-slate-400 font-bold uppercase tracking-wider mb-2">Requirement</p>
-              <div class="text-base font-black text-slate-900 dark:text-white mb-6">Corporate &amp; Wholesale Partner</div>
+              <div class="text-base font-black text-slate-900 dark:text-white mb-6">Corporate &amp; Wholesale</div>
               
               <ul class="space-y-3 border-t border-slate-100 dark:border-slate-800 pt-6 text-sm text-slate-600 dark:text-slate-300">
                 <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4.5 h-4.5 text-brand-secondary flex-shrink-0"></i><span>Up to 30% wholesale volume pricing</span></li>
@@ -732,6 +732,126 @@
           </div>
 
         </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Terroir Showcase Section (NEW: The Global Harvest Trail with Images) -->
+    <section id="harvest-terroirs" class="py-24 bg-white dark:bg-slate-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-secondary font-bold uppercase tracking-wider text-xs sm:text-sm font-outfit">Terroir &amp; Traceability</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-outfit text-slate-900 dark:text-white">
+            The Global Harvest Trail
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 font-normal text-sm md:text-base leading-relaxed">
+            Every nut and date we roast has an authentic geographical heritage. We partner directly with regenerative family orchards across three continents to ensure peak mineral content and ethical harvesting.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Terroir 1: Kashmir Valley -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=700" 
+                   alt="Kashmir High-Altitude Mountain Valley" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 bg-amber-600/90 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                2,200m Elevation
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="text-xs font-semibold text-amber-300">Northern Himalayas</span>
+                <h3 class="text-xl font-bold font-outfit mt-0.5">Kashmir Valley Terroir</h3>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2.5">
+                <div class="flex items-center space-x-2 text-xs font-bold text-brand-primary dark:text-amber-400">
+                  <i data-lucide="map-pin" class="w-4 h-4 flex-shrink-0"></i>
+                  <span>Pulwama &amp; Shopian, Kashmir</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                  Glacial meltwater and crisp Himalayan air nurture our prized Mamra almonds and Mogra saffron. Slow natural maturation yields kernels with 42% natural oil density.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+                <span class="text-slate-400 font-medium">Core Harvest:</span>
+                <span class="font-bold text-slate-900 dark:text-white">Mamra Almonds &amp; Saffron</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terroir 2: Konkan Coast -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=700" 
+                   alt="Konkan Coast Ocean Breezes and Cashew Groves" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 bg-brand-secondary/90 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Maritime Micro-Climate
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="text-xs font-semibold text-lime-300">Western Ghats</span>
+                <h3 class="text-xl font-bold font-outfit mt-0.5">Goan Konkan Groves</h3>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2.5">
+                <div class="flex items-center space-x-2 text-xs font-bold text-brand-secondary dark:text-lime-400">
+                  <i data-lucide="map-pin" class="w-4 h-4 flex-shrink-0"></i>
+                  <span>Sindhudurg &amp; North Goa</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                  Red laterite coastal soil rich in iron and warm Arabian Sea breezes give our jumbo W180 king cashews their distinctive natural sweetness and crisp, buttery ivory snap.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+                <span class="text-slate-400 font-medium">Core Harvest:</span>
+                <span class="font-bold text-slate-900 dark:text-white">Jumbo W180 King Cashews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terroir 3: Jordan Valley -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=700" 
+                   alt="Sun-Drenched Desert Date Palms in Jordan Valley" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 bg-amber-700/90 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                -390m Below Sea Level
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="text-xs font-semibold text-amber-200">Fertile Rift Valley</span>
+                <h3 class="text-xl font-bold font-outfit mt-0.5">Jordan Valley Oasis</h3>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2.5">
+                <div class="flex items-center space-x-2 text-xs font-bold text-brand-primary dark:text-amber-400">
+                  <i data-lucide="map-pin" class="w-4 h-4 flex-shrink-0"></i>
+                  <span>Jordan Valley &amp; Jericho Oasis</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                  Intense desert sunshine with over 360 sunny days per year allows our organic Royal Medjool dates to tree-ripen to deep caramel sweetness without any artificial drying chambers.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+                <span class="text-slate-400 font-medium">Core Harvest:</span>
+                <span class="font-bold text-slate-900 dark:text-white">Royal Jumbo Medjool Dates</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
       </div>
     </section>

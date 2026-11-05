@@ -64,11 +64,11 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce">
-            <i data-lucide="leaf" class="w-6 h-6"></i>
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group flex-shrink-0">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce flex-shrink-0">
+            <i data-lucide="leaf" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
-          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <span class="font-outfit text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
             Golden<span class="text-brand-primary">Harvest</span>
           </span>
         </a>
@@ -102,8 +102,8 @@
         </div>
 
         <!-- Mobile Navigation Menu Toggle Button -->
-        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+        <div class="flex items-center space-x-2 sm:space-x-3 lg:hidden rtl:space-x-reverse flex-shrink-0">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex-shrink-0" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -232,8 +232,165 @@
       </div>
     </section>
 
-    <!-- 3. Ordering Process Section -->
-    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative">
+    <!-- 3. Nutritional Superpowers & Daily Wellness Guide (NEW SECTION TO ENHANCE PRODUCTS PAGE) -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-xs sm:text-sm font-outfit">Superfood Science</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-outfit text-slate-900 dark:text-white">
+            Nutritional Superpowers &amp; Daily Wellness Matrix
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 font-normal text-sm md:text-base leading-relaxed">
+            Every handful of GoldenHarvest dry fruits delivers concentrated plant protein, heart-healthy monounsaturated fats, and vital minerals. Here is how our four core categories fuel your daily vitality.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Nutrition Card 1: Almonds -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between h-full text-left ltr:text-left rtl:text-right hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/40 text-brand-primary flex items-center justify-center mb-6">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">Antioxidant Defense</span>
+              <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white mt-1 mb-3">Almonds Superpower</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed mb-6">
+                Richest whole-food source of alpha-tocopherol Vitamin E. Promotes healthy cellular regeneration, youthful skin elasticity, and cardiovascular wellness.
+              </p>
+              
+              <div class="space-y-2.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs font-semibold text-slate-700 dark:text-slate-200">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Plant Protein:</span>
+                  <span class="font-bold text-brand-primary dark:text-amber-400">6.0g / 28g</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Vitamin E RDA:</span>
+                  <span class="font-bold">37% per handful</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Glycemic Index:</span>
+                  <span class="font-bold text-brand-secondary">15 (Ultra-Low)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <span class="text-[10px] text-slate-400 font-medium block mb-1">Recommended Serving:</span>
+              <div class="text-xs font-bold text-slate-900 dark:text-white">20–23 Kernels (Soaked or Dry-Roasted)</div>
+            </div>
+          </div>
+
+          <!-- Nutrition Card 2: Cashews -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between h-full text-left ltr:text-left rtl:text-right hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/40 text-brand-primary flex items-center justify-center mb-6">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">Neuromuscular Fuel</span>
+              <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white mt-1 mb-3">Cashews Superpower</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed mb-6">
+                Packed with bioavailable magnesium and zinc for deep neuromuscular recovery, stress regulation, and bone density maintenance.
+              </p>
+              
+              <div class="space-y-2.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs font-semibold text-slate-700 dark:text-slate-200">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Magnesium:</span>
+                  <span class="font-bold text-brand-primary dark:text-amber-400">83mg / 28g</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Dietary Zinc:</span>
+                  <span class="font-bold">1.6mg (15% RDA)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Cholesterol:</span>
+                  <span class="font-bold text-brand-secondary">0mg (100% Zero)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <span class="text-[10px] text-slate-400 font-medium block mb-1">Recommended Serving:</span>
+              <div class="text-xs font-bold text-slate-900 dark:text-white">15–18 King Kernels (Afternoon Fuel)</div>
+            </div>
+          </div>
+
+          <!-- Nutrition Card 3: Dates -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between h-full text-left ltr:text-left rtl:text-right hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/40 text-brand-primary flex items-center justify-center mb-6">
+                <i data-lucide="flame" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">Natural Endurance</span>
+              <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white mt-1 mb-3">Dates Superpower</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed mb-6">
+                Unrefined natural simple sugars blended with soluble fiber. Delivers fast athletic glycogen replenishment without blood sugar crashes.
+              </p>
+              
+              <div class="space-y-2.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs font-semibold text-slate-700 dark:text-slate-200">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Dietary Fiber:</span>
+                  <span class="font-bold text-brand-primary dark:text-amber-400">6.7g / 100g</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Potassium:</span>
+                  <span class="font-bold">696mg (Electrolyte)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Refined Sugar:</span>
+                  <span class="font-bold text-brand-secondary">0% (Pure Fruit)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <span class="text-[10px] text-slate-400 font-medium block mb-1">Recommended Serving:</span>
+              <div class="text-xs font-bold text-slate-900 dark:text-white">2–3 Medjool Dates (Pre-Workout Boost)</div>
+            </div>
+          </div>
+
+          <!-- Nutrition Card 4: Mixes -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between h-full text-left ltr:text-left rtl:text-right hover:-translate-y-1 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-lime-100 dark:bg-lime-950/40 text-brand-secondary flex items-center justify-center mb-6">
+                <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[10px] font-bold text-brand-secondary uppercase tracking-widest">Holistic Synergy</span>
+              <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white mt-1 mb-3">Trail Mix Superpower</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed mb-6">
+                Multi-origin synergy of whole tree nuts, Austrian pumpkin seeds, and antioxidant berries providing steady all-day mental focus.
+              </p>
+              
+              <div class="space-y-2.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs font-semibold text-slate-700 dark:text-slate-200">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Healthy Fats:</span>
+                  <span class="font-bold text-brand-secondary">Omega-3 &amp; Omega-6</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Anthocyanins:</span>
+                  <span class="font-bold">High (Berry Extracts)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 font-normal">Satiety Score:</span>
+                  <span class="font-bold text-brand-primary dark:text-amber-400">9.4 / 10</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <span class="text-[10px] text-slate-400 font-medium block mb-1">Recommended Serving:</span>
+              <div class="text-xs font-bold text-slate-900 dark:text-white">1 Palm-Sized Cupped Handful (30g)</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Ordering Process Section -->
+    <section class="py-16 bg-white dark:bg-slate-900 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -278,8 +435,8 @@
       </div>
     </section>
 
-    <!-- 4. Pricing / Packages Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <!-- 5. Pricing / Packages Section -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -386,6 +543,122 @@
             Enquire Now
           </a>
         </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Single-Origin Harvest Calendar & Freshness Packaging (NEW SECTION TO ENHANCE PRODUCTS PAGE) -->
+    <section class="py-20 bg-white dark:bg-slate-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-secondary font-semibold uppercase tracking-wider text-xs sm:text-sm font-outfit">Crop Seasons &amp; Packaging</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-outfit text-slate-900 dark:text-white">
+            Single-Origin Harvest Calendar &amp; Storage Guarantee
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 font-normal text-sm md:text-base leading-relaxed">
+            We operate on strict single-harvest cycles. Every batch in our store is harvested in its peak season and protected with pharmaceutical-grade nitrogen barrier seal technology.
+          </p>
+        </div>
+
+        <!-- 4-Quarter Calendar Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          
+          <!-- Q1 -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md text-left ltr:text-left rtl:text-right space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/40 text-brand-primary text-xs font-black">Q1 (JAN – MAR)</span>
+              <span class="text-xs text-slate-400 font-medium">Winter Flush</span>
+            </div>
+            <h4 class="text-lg font-bold font-outfit text-slate-900 dark:text-white">Walnuts &amp; Mamra Almonds</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Snow-fed Kashmiri Kagzi walnuts and Iranian Gurbandi almonds cured in temperature-controlled dry air.
+            </p>
+            <div class="text-[11px] font-semibold text-brand-primary dark:text-amber-400">Peak Moisture: 4.8% — Maximum Snap</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md text-left ltr:text-left rtl:text-right space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-lime-100 dark:bg-lime-950/40 text-brand-secondary text-xs font-black">Q2 (APR – JUN)</span>
+              <span class="text-xs text-slate-400 font-medium">Spring Flush</span>
+            </div>
+            <h4 class="text-lg font-bold font-outfit text-slate-900 dark:text-white">Goan Jumbo Cashews</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Fresh tree-ripened Konkan cashew apples harvested and hand-shelled into pristine ivory W180 king kernels.
+            </p>
+            <div class="text-[11px] font-semibold text-brand-secondary dark:text-lime-400">First-Press Oil Density: 47%</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md text-left ltr:text-left rtl:text-right space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/40 text-amber-600 text-xs font-black">Q3 (JUL – SEP)</span>
+              <span class="text-xs text-slate-400 font-medium">Late Summer</span>
+            </div>
+            <h4 class="text-lg font-bold font-outfit text-slate-900 dark:text-white">California Almonds &amp; Figs</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Golden State Nonpareil almond shaking followed by Aegean coastal sun-drying of plump Turkish Inzhir figs.
+            </p>
+            <div class="text-[11px] font-semibold text-amber-600 dark:text-amber-400">Certified Non-GMO Project Verified</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="glass-card p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md text-left ltr:text-left rtl:text-right space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/40 text-brand-primary text-xs font-black">Q4 (OCT – DEC)</span>
+              <span class="text-xs text-slate-400 font-medium">Autumn Reserve</span>
+            </div>
+            <h4 class="text-lg font-bold font-outfit text-slate-900 dark:text-white">Medjool Dates &amp; Saffron</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Jordan Valley dates hand-picked at peak amber translucency and purple saffron blossoms plucked at dawn.
+            </p>
+            <div class="text-[11px] font-semibold text-brand-primary dark:text-amber-400">Export Reserve — Festive Stock</div>
+          </div>
+
+        </div>
+
+        <!-- 3 Packaging Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse text-left ltr:text-left rtl:text-right">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/40 text-brand-primary flex items-center justify-center flex-shrink-0">
+              <i data-lucide="wind" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 dark:text-white text-base">Nitrogen-Flushed Barrier Bricks</h5>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal mt-1 leading-relaxed">
+                Replaces 99.8% of atmospheric oxygen with food-grade inert nitrogen to prevent lipid rancidity without preservatives.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse text-left ltr:text-left rtl:text-right">
+            <div class="w-12 h-12 rounded-2xl bg-lime-100 dark:bg-lime-950/40 text-brand-secondary flex items-center justify-center flex-shrink-0">
+              <i data-lucide="sun-medium" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 dark:text-white text-base">UV-Shielded Glass &amp; Kraft Pouches</h5>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal mt-1 leading-relaxed">
+                Protects sensitive alpha-tocopherols and fatty acids from photo-degradation, ensuring crunch stays intact for 12 months.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse text-left ltr:text-left rtl:text-right">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/40 text-brand-primary flex items-center justify-center flex-shrink-0">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 dark:text-white text-base">Zero Sulfur &amp; Chemical Glazes</h5>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal mt-1 leading-relaxed">
+                No sulfur dioxide, shellac coatings, or synthetic bleaching agents. What you taste is 100% natural orchard purity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
       </div>
     </section>

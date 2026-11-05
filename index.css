@@ -7,6 +7,7 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,8 @@
 
   body {
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
@@ -285,10 +288,22 @@ html[dir="rtl"] select {
   margin-right: auto !important;
 }
 
-#mobile-menu button {
+#mobile-menu button:not(#mobile-menu-close) {
   max-width: 280px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+#mobile-menu #mobile-menu-close {
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  position: absolute !important;
+  top: 0.75rem !important;
+  right: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 #mobile-menu .h-\[1px\] {
@@ -490,10 +505,10 @@ html[dir="rtl"] select {
    ============================================================ */
 @media (min-width: 768px) and (max-width: 1023px) {
   .last-card-md {
-    grid-column: 1 / -1;
-    width: calc(50% - 1rem);
-    margin-left: auto;
-    margin-right: auto;
+    grid-column: 1 / -1 !important;
+    width: calc(50% - 1rem) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 

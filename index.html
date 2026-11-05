@@ -64,11 +64,11 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce">
-            <i data-lucide="leaf" class="w-6 h-6"></i>
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group flex-shrink-0">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce flex-shrink-0">
+            <i data-lucide="leaf" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
-          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <span class="font-outfit text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
             Golden<span class="text-brand-primary">Harvest</span>
           </span>
         </a>
@@ -102,8 +102,8 @@
         </div>
 
         <!-- Mobile Navigation Menu Toggle Button -->
-        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+        <div class="flex items-center space-x-2 sm:space-x-3 lg:hidden rtl:space-x-reverse flex-shrink-0">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex-shrink-0" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -414,8 +414,133 @@
       </div>
     </section>
 
-    <!-- 4. Crafting Process Section -->
+    <!-- 4. Small-Batch Roastery & Seasoning Gallery (NEW SECTION WITH IMAGES) -->
     <section class="py-20 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-bold uppercase tracking-wider text-xs sm:text-sm font-outfit">Artisanal Flavor Craft</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-outfit text-slate-900 dark:text-white">
+            Small-Batch Roastery &amp; Seasoning Lab
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 font-normal text-sm md:text-base leading-relaxed">
+            Beyond raw kernels, our master roasters craft daily small 15 kg copper-pan batches. Gently infused with natural botanicals, wild mountain honey, and hand-crushed whole spices without a single drop of refined oil.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Flavor 1 -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1563292769-4e05b684851a?auto=format&fit=crop&q=80&w=600" 
+                   alt="Rosemary &amp; Pink Salt Roasted Cashews" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3.5 left-3.5 bg-amber-600/90 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Copper-Pan Roast
+              </div>
+              <div class="absolute bottom-3 left-4 text-white">
+                <span class="text-[11px] font-semibold text-amber-300">Savory Botanical</span>
+                <h4 class="text-base font-bold font-outfit">Rosemary &amp; Pink Salt Cashews</h4>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                Jumbo W180 Goan cashews roasted in mineral-rich pink Himalayan rock salt and organic crushed mountain rosemary leaves.
+              </p>
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-brand-primary dark:text-amber-400">
+                <span>Medium Dry Roast</span>
+                <a href="services.html" class="hover:underline flex items-center gap-1">Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flavor 2 -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=600" 
+                   alt="Saffron &amp; Wild Honey Caramelized Almonds" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3.5 left-3.5 bg-brand-primary text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Royal Infusion
+              </div>
+              <div class="absolute bottom-3 left-4 text-white">
+                <span class="text-[11px] font-semibold text-amber-300">Sweet Botanical</span>
+                <h4 class="text-base font-bold font-outfit">Saffron &amp; Honey Glazed Almonds</h4>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                Kashmiri Mamra almonds gently tossed in organic forest wildflower honey and crushed Grade-A Pampore saffron threads.
+              </p>
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-brand-primary dark:text-amber-400">
+                <span>Honey Glaze Finish</span>
+                <a href="services.html" class="hover:underline flex items-center gap-1">Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flavor 3 -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=600" 
+                   alt="Pistachio Stuffed Royal Medjool Dates" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3.5 left-3.5 bg-brand-secondary text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Hand-Crafted
+              </div>
+              <div class="absolute bottom-3 left-4 text-white">
+                <span class="text-[11px] font-semibold text-lime-300">Gourmet Reserve</span>
+                <h4 class="text-base font-bold font-outfit">Pistachio-Stuffed Medjool Dates</h4>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                Jumbo organic Medjool dates hand-pitted and filled with raw Iranian green pistachios, Kashmiri walnuts, and edible silver leaf.
+              </p>
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-brand-secondary dark:text-lime-400">
+                <span>Zero Added Sugar</span>
+                <a href="services.html" class="hover:underline flex items-center gap-1">Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flavor 4 -->
+          <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1536591375315-196000ea3678?auto=format&fit=crop&q=80&w=600" 
+                   alt="Smoked Paprika &amp; Herb Seed Cluster" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3.5 left-3.5 bg-amber-700/90 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Wood-Smoked
+              </div>
+              <div class="absolute bottom-3 left-4 text-white">
+                <span class="text-[11px] font-semibold text-amber-200">High-Protein</span>
+                <h4 class="text-base font-bold font-outfit">Smoked Paprika Seed Crunch</h4>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+                Oven-roasted Austrian pumpkin seeds, white sesame, and almond slivers slow-smoked with sweet Spanish pimentón and cracked coriander.
+              </p>
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-brand-primary dark:text-amber-400">
+                <span>Wood-Fired Aroma</span>
+                <a href="services.html" class="hover:underline flex items-center gap-1">Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Crafting Process Section -->
+    <section class="py-20 bg-white dark:bg-slate-900 relative overflow-hidden">
       <div class="bubble w-80 h-80 top-1/2 left-0 opacity-40"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -474,7 +599,7 @@
             <div class="w-20 h-20 rounded-full bg-white dark:bg-slate-900 text-brand-primary border-4 border-slate-100 dark:border-slate-800 flex items-center justify-center text-2xl font-bold font-outfit shadow-md group-hover:border-brand-primary dark:group-hover:border-amber-400 group-hover:scale-105 transition-all duration-300 mb-6">
               04
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Vacuum-Sealed Freshness</h3>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Vacuum-Sealed Fresh</h3>
             <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal max-w-[220px]">
               Packed immediately into nitrogen-flushed pouches, glass jars, and luxury gift boxes to lock in orchard-fresh crunch.
             </p>
@@ -484,8 +609,8 @@
       </div>
     </section>
 
-    <!-- 5. Quality Comparison & Review Section -->
-    <section class="py-20 bg-white dark:bg-slate-900">
+    <!-- 6. Quality Comparison & Review Section -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Grid layout -->
@@ -591,7 +716,7 @@
                 <div class="p-5 space-y-2">
                   <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <i data-lucide="sparkles" class="w-4 h-4 text-brand-primary"></i>
-                    GoldenHarvest Jumbo Reserve
+                    GoldenHarvest Reserve
                   </h3>
                   <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
                     Hand-selected king-size kernels, dry-roasted without oil and nitrogen-sealed in airtight jars for 100% crispness and rich flavor.
