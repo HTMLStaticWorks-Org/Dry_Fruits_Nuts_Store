@@ -1,19 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#c25e0c" />
       <stop offset="100%" stop-color="#d97706" />
     </linearGradient>
+    <linearGradient id="nutGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <linearGradient id="cashewGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="128" fill="url(#logoGrad)" />
-  <g fill="#ffffff">
-    <!-- Stylized Almond / Wholesome Kernel -->
-    <path d="M256,96 C180,156 144,244 164,332 C180,396 220,420 256,420 C292,420 332,396 348,332 C368,244 332,156 256,96 Z" opacity="0.95" />
-    <!-- Inner Kernel Detail Lines -->
-    <path d="M256,140 L256,385" stroke="#b45309" stroke-width="14" stroke-linecap="round" />
-    <path d="M256,220 Q215,245 198,285" stroke="#b45309" stroke-width="12" fill="none" stroke-linecap="round" />
-    <path d="M256,260 Q297,285 314,325" stroke="#b45309" stroke-width="12" fill="none" stroke-linecap="round" />
-    <!-- Top Sprout / Leaf Accent -->
-    <circle cx="256" cy="76" r="14" fill="#fde68a" />
+  
+  <!-- Rounded Squircle Badge -->
+  <rect width="512" height="512" rx="128" fill="url(#logoBg)" />
+  <rect x="18" y="18" width="476" height="476" rx="114" fill="none" stroke="#fef3c7" stroke-width="6" opacity="0.3" />
+
+  <!-- Almond Kernel (Left) -->
+  <g transform="translate(10, 0)">
+    <!-- Almond Silhouette -->
+    <path d="M210,95 C145,150 105,245 125,335 C140,398 180,425 220,425 C265,425 305,395 315,335 C330,245 280,150 210,95 Z" 
+          fill="url(#nutGold)" />
+    <!-- Almond Inner Ridges (Woodcut style) -->
+    <path d="M210,140 C205,230 205,320 218,390" 
+          stroke="#b45309" stroke-width="14" stroke-linecap="round" />
+    <path d="M205,225 C170,250 148,290 142,340" 
+          stroke="#b45309" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M212,280 C240,305 265,340 272,375" 
+          stroke="#b45309" stroke-width="12" stroke-linecap="round" fill="none" />
   </g>
+
+  <!-- Cashew Nut (Right Crescent) -->
+  <path d="M310,155 C375,155 435,205 435,275 C435,345 385,410 320,430 C285,440 260,420 270,385 C280,350 315,335 330,300 C348,255 332,205 295,178 C280,165 290,155 310,155 Z" 
+        fill="url(#cashewGrad)" stroke="#b45309" stroke-width="10" />
+
+  <!-- Natural Sprout / Leaf at Top -->
+  <path d="M205,65 C220,40 250,35 265,48 C255,75 225,82 205,65 Z" fill="#84cc16" />
 </svg>

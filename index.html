@@ -64,13 +64,16 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group flex-shrink-0">
-          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20 animate-bounce flex-shrink-0">
-            <i data-lucide="leaf" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        <a href="index.html" class="flex items-center space-x-2.5 rtl:space-x-reverse group flex-shrink-0">
+          <img src="favicon.svg" alt="GoldenHarvest Logo" class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl shadow-md shadow-amber-950/20 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+          <div class="flex flex-col text-left ltr:text-left rtl:text-right">
+            <span class="font-outfit text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
+              Golden<span class="text-brand-primary">Harvest</span>
+            </span>
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 leading-tight mt-0.5">
+              Dry Fruits &amp; Nuts
+            </span>
           </div>
-          <span class="font-outfit text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Golden<span class="text-brand-primary">Harvest</span>
-          </span>
         </a>
 
         <!-- Desktop Menu -->
@@ -146,67 +149,142 @@
   <main class="flex-grow pt-20">
     
     <!-- 1. Hero Section -->
-    <section class="hero-section relative flex flex-col sm:flex-row min-h-screen sm:items-center py-20 md:py-28 lg:py-36 sm:overflow-hidden text-white bg-slate-950">
-      <!-- Full Cover Background Image — hidden on mobile, visible sm+ -->
-      <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=1600" 
-           alt="Premium Assorted Dry Fruits and Nuts at GoldenHarvest" 
-           class="hidden sm:block absolute inset-0 w-full h-full object-cover opacity-65 dark:opacity-55">
-      <!-- Warm earthy gradient overlay — hidden on mobile -->
-      <div class="hidden sm:block absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/60 to-slate-900/30 rtl:from-slate-900/30 rtl:via-slate-950/60 rtl:to-slate-950/85 z-0"></div>
+    <section class="hero-section relative min-h-screen flex items-center justify-center py-20 md:py-28 lg:py-32 overflow-hidden text-white bg-slate-950">
       
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div class="max-w-4xl mx-auto space-y-6 flex flex-col items-center justify-center animate-fade-in-up">
+      <!-- Full Cover Photographic Background with High Clarity & Warmth -->
+      <img src="https://s12857.pcdn.co/en-US/blog/wp-content/uploads/2019/05/190513_NutsForNuts.jpg" 
+           alt="Artisanal roasted nuts, almonds, and dates in wooden bowls" 
+           class="absolute inset-0 w-full h-full object-cover opacity-80 sm:opacity-85 dark:opacity-75 filter contrast-105">
+      
+      <!-- Warm Earthy Translucent Vignette (Balances vivid image with crystal-clear text) -->
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/35 to-slate-950/85 z-0"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/40 via-transparent to-slate-950/40 z-0"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-950/20 to-slate-950/70 z-0 pointer-events-none"></div>
+
+      <!-- Glowing Decorative Orbs -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-0"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center w-full">
+        <div class="max-w-4xl mx-auto space-y-6 sm:space-y-7 flex flex-col items-center justify-center animate-fade-in-up">
           
-          <!-- Badge -->
-          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-white/10 text-amber-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md">
-            <i data-lucide="sparkles" class="w-4 h-4 text-amber-400 animate-pulse"></i>
-            <span>100% Natural &amp; Handpicked Harvest</span>
+          <!-- Social Proof & Fresh Crop Badge -->
+          <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 sm:py-2 rounded-full bg-slate-950/60 border border-white/20 dark:border-amber-600/40 text-amber-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md shadow-xl shadow-black/40">
+            <span class="flex items-center text-amber-400 gap-0.5">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span class="text-slate-200 font-medium normal-case">Rated 4.9/5 by 12,000+ Pantry Lovers</span>
+            <span class="hidden sm:inline text-white/30">•</span>
+            <span class="text-amber-300 font-bold flex items-center gap-1">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+              Fresh Harvest 2026
+            </span>
           </div>
           
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] font-outfit text-center">
+          <!-- Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.12] font-outfit text-center tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
             Nurtured by Nature,<br>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-lime-300">Handpicked Wholesome Goodness</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-200 to-lime-300">
+              Handpicked Wholesome Goodness
+            </span>
           </h1>
           
-          <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto font-normal leading-relaxed text-center">
-            Welcome to GoldenHarvest. Discover an authentic collection of farm-fresh California and Mamra almonds, jumbo W180 cashews, royal Medjool dates, artisan trail mixes, luxury festive gift hampers, and wholesale bulk orders.
+          <!-- Subtitle -->
+          <p class="text-sm sm:text-base md:text-lg text-slate-100 max-w-2xl mx-auto font-medium leading-relaxed text-center drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
+            Orchard-fresh California &amp; Kashmiri Mamra almonds, buttery jumbo W180 cashews, organic Royal Medjool dates, and slow dry-roasted artisanal mixes—delivered nitrogen-sealed for pure orchard crunch.
           </p>
-          
-          <!-- Credentials row -->
-          <div class="grid grid-cols-3 gap-4 py-4 border-y border-white/10 w-full max-w-2xl mx-auto justify-items-center">
-            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
-              <i data-lucide="check" class="w-5 h-5 text-amber-400 flex-shrink-0"></i>
-              <span class="text-xs sm:text-sm font-medium text-slate-200">100% Organic Orchards</span>
+
+          <!-- Primary & Secondary CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto pt-1">
+            <a href="services.html" class="w-full sm:flex-1 px-8 py-4 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent hover:from-amber-600 hover:to-amber-500 text-white text-center font-bold text-sm shadow-xl shadow-amber-900/40 hover:shadow-amber-700/50 transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 rtl:space-x-reverse group">
+              <span>Explore Products</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform"></i>
+            </a>
+            <a href="gallery.html" class="w-full sm:flex-1 px-8 py-4 rounded-xl bg-white/10 dark:bg-slate-900/50 border border-white/20 dark:border-slate-700 text-white text-center font-bold text-sm hover:bg-white/20 dark:hover:bg-slate-800 transition-all flex items-center justify-center space-x-2 rtl:space-x-reverse backdrop-blur-md shadow-lg">
+              <i data-lucide="gift" class="w-4 h-4 text-amber-300"></i>
+              <span>Luxury Gift Boxes</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Strip -->
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-xs text-slate-300 font-medium">
+            <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+              <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+              <span>100% Oil-Free Dry Roasted</span>
             </div>
-            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
-              <i data-lucide="award" class="w-5 h-5 text-amber-400 flex-shrink-0"></i>
-              <span class="text-xs sm:text-sm font-medium text-slate-200">40+ Premium Varieties</span>
+            <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+              <i data-lucide="leaf" class="w-4 h-4 text-lime-400"></i>
+              <span>Single-Origin Orchards</span>
             </div>
-            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
-              <i data-lucide="gift" class="w-5 h-5 text-amber-300 flex-shrink-0"></i>
-              <span class="text-xs sm:text-sm font-medium text-slate-200">Luxury Gift &amp; Bulk Options</span>
+            <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+              <i data-lucide="box" class="w-4 h-4 text-amber-400"></i>
+              <span>Nitrogen-Flushed Seal</span>
             </div>
           </div>
 
-          <!-- CTA Actions -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 w-full">
-            <a href="services.html" class="w-full sm:w-72 px-8 py-4 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white text-center font-semibold shadow-lg shadow-amber-700/20 hover:shadow-amber-700/35 transition-all transform hover:-translate-y-0.5 flex items-center justify-center">
-              Explore Our Products
-            </a>
-            <a href="gallery.html" class="w-full sm:w-72 px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white text-center font-semibold hover:bg-white/20 transition-all flex items-center justify-center space-x-2 rtl:space-x-reverse backdrop-blur-sm">
-              <i data-lucide="gift" class="w-4 h-4 text-amber-300"></i>
-              <span>Shop Luxury Gift Boxes</span>
-            </a>
+        </div>
+
+        <!-- Interactive 4-Category Visual Showcase Strip (Featured Inside Hero) -->
+        <div class="mt-10 sm:mt-12 max-w-5xl mx-auto">
+          <div class="p-3 sm:p-4 rounded-3xl bg-white/5 dark:bg-slate-900/60 border border-white/15 dark:border-slate-800/80 backdrop-blur-xl shadow-2xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4">
+              
+              <!-- Quick Card 1: Almonds -->
+              <a href="services.html" class="p-2.5 sm:p-4 rounded-2xl bg-white/5 hover:bg-white/10 dark:bg-slate-800/40 dark:hover:bg-slate-800/80 border border-white/10 hover:border-amber-500/50 transition-all duration-300 group text-left ltr:text-left rtl:text-right flex items-center space-x-2.5 sm:space-x-3 rtl:space-x-reverse">
+                <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=200" 
+                     alt="California &amp; Mamra Almonds" 
+                     class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform shadow-md">
+                <div class="min-w-0">
+                  <span class="text-[9px] sm:text-[10px] text-amber-400 font-bold uppercase tracking-wider block">Orchard Select</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors truncate">Almonds</h4>
+                  <span class="text-[9px] sm:text-[10px] text-slate-300 block truncate">Mamra &amp; Nonpareil</span>
+                </div>
+              </a>
+
+              <!-- Quick Card 2: Cashews -->
+              <a href="services.html" class="p-2.5 sm:p-4 rounded-2xl bg-white/5 hover:bg-white/10 dark:bg-slate-800/40 dark:hover:bg-slate-800/80 border border-white/10 hover:border-amber-500/50 transition-all duration-300 group text-left ltr:text-left rtl:text-right flex items-center space-x-2.5 sm:space-x-3 rtl:space-x-reverse">
+                <img src="https://www.jaffah.com/wp-content/uploads/2024/11/CASHEW4.jpg" 
+                     alt="Jumbo W180 King Cashews" 
+                     class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform shadow-md">
+                <div class="min-w-0">
+                  <span class="text-[9px] sm:text-[10px] text-amber-400 font-bold uppercase tracking-wider block">W180 King</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors truncate">Cashews</h4>
+                  <span class="text-[9px] sm:text-[10px] text-slate-300 block truncate">Slow Dry-Roasted</span>
+                </div>
+              </a>
+
+              <!-- Quick Card 3: Dates -->
+              <a href="services.html" class="p-2.5 sm:p-4 rounded-2xl bg-white/5 hover:bg-white/10 dark:bg-slate-800/40 dark:hover:bg-slate-800/80 border border-white/10 hover:border-amber-500/50 transition-all duration-300 group text-left ltr:text-left rtl:text-right flex items-center space-x-2.5 sm:space-x-3 rtl:space-x-reverse">
+                <img src="https://rajdryfruit.com/media/2026/10/medjool-dates-bowl-960x960.jpg" 
+                     alt="Royal Medjool &amp; Ajwa Dates" 
+                     class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform shadow-md">
+                <div class="min-w-0">
+                  <span class="text-[9px] sm:text-[10px] text-amber-400 font-bold uppercase tracking-wider block">Tree-Ripened</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors truncate">Royal Dates</h4>
+                  <span class="text-[9px] sm:text-[10px] text-slate-300 block truncate">Medjool &amp; Ajwa</span>
+                </div>
+              </a>
+
+              <!-- Quick Card 4: Mixes -->
+              <a href="services.html" class="p-2.5 sm:p-4 rounded-2xl bg-white/5 hover:bg-white/10 dark:bg-slate-800/40 dark:hover:bg-slate-800/80 border border-white/10 hover:border-amber-500/50 transition-all duration-300 group text-left ltr:text-left rtl:text-right flex items-center space-x-2.5 sm:space-x-3 rtl:space-x-reverse">
+                <img src="https://i0.wp.com/www.peanutbutterandpeppers.com/wp-content/uploads/2014/01/Blueberry-Trail-Mix-005a.jpg?fit=1000%2C667&ssl=1&w=640" 
+                     alt="Superfood Trail &amp; Nut Mixes" 
+                     class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform shadow-md">
+                <div class="min-w-0">
+                  <span class="text-[9px] sm:text-[10px] text-lime-400 font-bold uppercase tracking-wider block">Superfood</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-lime-300 transition-colors truncate">Nut Mixes</h4>
+                  <span class="text-[9px] sm:text-[10px] text-slate-300 block truncate">Seeds, Berries &amp; Nuts</span>
+                </div>
+              </a>
+
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Mobile-only: image displayed below content as a standalone block -->
-      <img 
-        src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=1600" 
-        alt="Premium Dry Fruits &amp; Nuts" 
-        class="block sm:hidden w-full flex-shrink-0 mt-6" 
-        style="height: 260px; object-fit: cover;">
+      </div>
     </section>
 
     <!-- 2. Crafted with Passion & Premium Ingredients Section -->
@@ -274,7 +352,7 @@
             <!-- Card 2: Cashews -->
             <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <div class="w-full h-52 overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com/photo-1563292769-4e05b684851a?auto=format&fit=crop&q=80&w=600" alt="Jumbo Whole Cashews" class="w-full h-full object-cover">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/cashew-jumbo-premium-w180-2025937960-hptr59tv.jpg" alt="Jumbo Whole Cashews" class="w-full h-full object-cover">
               </div>
               <div class="p-6">
                 <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Jumbo Whole Cashews</h4>
@@ -287,7 +365,7 @@
             <!-- Card 3: Dates -->
             <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <div class="w-full h-52 overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=600" alt="Royal Medjool &amp; Ajwa Dates" class="w-full h-full object-cover">
+                <img src="https://d3lhyaytnudnz3.cloudfront.net/fs_/media/catalog/product/1/0/prd_6951_d50c7adf9323657e.jpg" alt="Royal Medjool &amp; Ajwa Dates" class="w-full h-full object-cover">
               </div>
               <div class="p-6">
                 <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Royal Medjool &amp; Ajwa Dates</h4>
@@ -300,7 +378,7 @@
             <!-- Card 4: Mixes -->
             <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <div class="w-full h-52 overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com/photo-1536591375315-196000ea3678?auto=format&fit=crop&q=80&w=600" alt="Artisan Trail &amp; Berry Mixes" class="w-full h-full object-cover">
+                <img src="https://www.hamiast.com/cdn/shop/files/Nutritious_Trail_Mix_-_Premium_Dry_Fruits_Berries_and_Seeds_Blend_-_Hamiast-62662_3200x.jpg?v=1740485936" alt="Artisan Trail &amp; Berry Mixes" class="w-full h-full object-cover">
               </div>
               <div class="p-6">
                 <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Artisan Trail &amp; Seed Mixes</h4>
@@ -337,7 +415,7 @@
           <!-- Single-Origin Nuts & Dates -->
           <div class="flex flex-col h-full bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-slate-100 dark:border-slate-900">
             <div class="overflow-hidden relative h-56 sm:h-72">
-              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://www.news-medical.net/image-handler/picture/2021/9/shutterstock_355672364.jpg" 
                    alt="Handpicked Nuts, Dates andMixes" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute top-4 left-4 bg-brand-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
@@ -345,7 +423,7 @@
               </div>
             </div>
             <div class="p-8 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Handpicked Nuts &amp; Dates</h3>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Handpicked Nuts</h3>
               <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 flex-grow leading-relaxed">
                 Export-grade almonds, cashews, pistachios, walnuts, and soft Arabian dates packed fresh in airtight glass jars and resealable pouches.
               </p>
@@ -362,7 +440,7 @@
           <!-- Luxury Gift Boxes & Hampers -->
           <div class="flex flex-col h-full bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-slate-100 dark:border-slate-900">
             <div class="overflow-hidden relative h-56 sm:h-72">
-              <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://atelier-duchocolat.com/cdn/shop/files/IMG_6012_f04386b7-5fdd-48ce-a699-b90ba6eeac4c.jpg?v=1778243103&width=3840" 
                    alt="Luxury Dry Fruit Gift Boxes" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute top-4 left-4 bg-brand-secondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
@@ -375,8 +453,8 @@
                 Handcrafted velvet chests, rosewood boxes, and brass-inlaid trays filled with gourmet nuts, stuffed Medjool dates, and saffron.
               </p>
               <ul class="space-y-2.5 mb-6 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300">
-                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Reusable keepsake wooden &amp; velvet boxes</span></li>
-                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Personalized ribbons &amp; greeting cards</span></li>
+                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Reusable keepsake wooden &amp; velvet</span></li>
+                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Personalized ribbons &amp; greeting</span></li>
               </ul>
               <a href="gallery.html" class="inline-flex items-center text-sm font-semibold text-brand-primary hover:text-brand-primaryHover hover:underline group/link">
                 <span>Explore Gift Boxes</span>
@@ -387,7 +465,7 @@
           <!-- Corporate & Event Bulk Orders -->
           <div class="last-card-md flex flex-col h-full bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-slate-100 dark:border-slate-900">
             <div class="overflow-hidden relative h-56 sm:h-72">
-              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://sindhidryfruits.live/cdn/shop/articles/Wholesale_Dry_Fruits_Shop_Near_Me.jpg?v=1741508872&width=1100" 
                    alt="Wholesale &amp; Corporate Bulk Dry Fruit Orders" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute top-4 left-4 bg-amber-800 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
@@ -400,7 +478,7 @@
                 Elevate corporate gifting, weddings, and culinary supply with custom-branded hampers, wholesale sacks, and tiered volume pricing.
               </p>
               <ul class="space-y-2.5 mb-6 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300">
-                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Custom company logo embossing &amp; sleeves</span></li>
+                <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Custom company logo embossing</span></li>
                 <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-amber-500 flex-shrink-0"></i><span>Direct-from-orchard wholesale rates</span></li>
               </ul>
               <a href="blog.html" class="inline-flex items-center text-sm font-semibold text-brand-primary hover:text-brand-primaryHover hover:underline group/link">
@@ -433,7 +511,7 @@
           <!-- Flavor 1 -->
           <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1563292769-4e05b684851a?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://uniquecooks.com/wp-content/uploads/2023/09/rosemary-roasted-cashews-6.jpg" 
                    alt="Rosemary &amp; Pink Salt Roasted Cashews" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -459,7 +537,7 @@
           <!-- Flavor 2 -->
           <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://www.allrecipes.com/thmb/ubezkKTj-UlQ1h_N8yIXPB6xiOI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229881-honey-roasted-almonds-DDMFS-beauty-4x3-BG-3074-d8368f28d9694d4d9ff565b280393a36.jpg" 
                    alt="Saffron &amp; Wild Honey Caramelized Almonds" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -485,7 +563,7 @@
           <!-- Flavor 3 -->
           <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://lemonadeindia.com/cdn/shop/files/stuffed-medjool-dates-box-of-12homelemonade-858928.jpg?v=1737536343&width=416" 
                    alt="Pistachio Stuffed Royal Medjool Dates" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -511,7 +589,7 @@
           <!-- Flavor 4 -->
           <div class="glass-card rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full text-left ltr:text-left rtl:text-right">
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1536591375315-196000ea3678?auto=format&fit=crop&q=80&w=600" 
+              <img src="https://maisondespices.com/assets/images/catalog/mexican-seasonings.jpg" 
                    alt="Smoked Paprika &amp; Herb Seed Cluster" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -683,7 +761,7 @@
               <!-- Card 1: Loose Market Nuts -->
               <div class="glass-card rounded-3xl overflow-hidden shadow-xl border border-amber-100 dark:border-amber-950/20 hover:-translate-y-1 transition-all duration-300">
                 <div class="h-60 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&q=80&w=600" 
+                  <img src="https://tiimg.tistatic.com/fp/1/010/281/whole-raw-almond-nuts-546.jpg" 
                        alt="Standard ungraded loose nuts" 
                        class="w-full h-full object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent"></div>
@@ -705,7 +783,7 @@
               <!-- Card 2: GoldenHarvest Export Grade -->
               <div class="glass-card rounded-3xl overflow-hidden shadow-xl border border-lime-200 dark:border-lime-950/20 hover:-translate-y-1 transition-all duration-300">
                 <div class="h-60 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=600" 
+                  <img src="https://www.goldenharvestltd.com/wp-content/uploads/2026/03/c5416571d97b3ad9135e0e9fe913f148.jpg" 
                        alt="GoldenHarvest Export A+ Grade Assortment" 
                        class="w-full h-full object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent"></div>
@@ -740,13 +818,16 @@
         
         <!-- Brand Info -->
         <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
-          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-900/20">
-              <i data-lucide="leaf" class="w-5 h-5"></i>
+          <a href="index.html" class="flex items-center space-x-2.5 rtl:space-x-reverse group">
+            <img src="favicon.svg" alt="GoldenHarvest Logo" class="w-10 h-10 rounded-xl shadow-md shadow-amber-950/20 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+            <div class="flex flex-col text-left ltr:text-left rtl:text-right">
+              <span class="font-outfit text-xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
+                Golden<span class="text-brand-primary">Harvest</span>
+              </span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 leading-tight mt-0.5">
+                Dry Fruits &amp; Nuts Store
+              </span>
             </div>
-            <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-              Golden<span class="text-brand-primary">Harvest</span>
-            </span>
           </a>
           <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
             Premium single-origin almonds, jumbo cashews, royal Arabian dates, wholesome trail mixes, luxury festive gift boxes, and wholesale bulk orders.

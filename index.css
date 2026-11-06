@@ -344,19 +344,12 @@ html[dir="rtl"] select {
   }
 }
 
-/* At 360px / small mobile — hide the absolute background image, show separate img */
+/* At small mobile (<640px) — ensure hero has balanced padding and natural height */
 @media (max-width: 639px) {
-  .hero-bg-img {
-    display: none !important;
-  }
-  .hero-overlay {
-    display: none !important;
-  }
   .hero-section {
-    background: #181009 !important;
     min-height: auto !important;
-    padding-top: 2rem !important;
-    padding-bottom: 0 !important;
+    padding-top: 6rem !important;
+    padding-bottom: 3rem !important;
   }
 }
 
