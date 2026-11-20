@@ -38,5 +38,5 @@
         fill="url(#cashewGrad)" stroke="#b45309" stroke-width="10" />
 
   <!-- Natural Sprout / Leaf at Top -->
-  <path d="M205,65 C220,40 250,35 265,48 C255,75 225,82 205,65 Z" fill="#84cc16" />
+  <path d="M205,65 C220,40 250,35 265,48 C255,75 225,82 205,65 Z" fill="#fde68a" />
 </svg>
